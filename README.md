@@ -10,10 +10,10 @@ This resource covers:
 - Copy-and-paste templates for emails and incident documentation  
 
 ---
-
 ## 🌐 Live Website
 
-👉 **Live site: [https://keiruff.github.io/opendoorpolicy/](https://keiruff.github.io/opendoorpolicy/)**
+👉 **Live site: [https://opendoorpolicy.org](https://opendoorpolicy.org)**  
+Hosted via GitHub Pages from this repo.
 
 ---
 
