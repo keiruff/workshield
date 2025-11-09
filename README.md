@@ -19,9 +19,13 @@ This resource covers:
 
 ## 🧠 About the Creator
 
-This site was created by **Keir Ruffner**, an employee who’s experienced retaliation, discrimination, and gaslighting firsthand — and turned that experience into an organized, accessible guide for others going through the same.
+This site was built by Keisha Ruffner, a public-sector worker who has personally been on the receiving end of retaliation, discrimination, and gaslighting — the slow, grinding mistreatment so many workers face in silence.
 
-Keir is not a lawyer. This site does not provide legal advice — it’s a worker-to-worker resource based on lived experience, research, and practical documentation methods.
+When serial patterns of mistreatment went unaddressed and “HR support” became damage control, Keisha began teaching herself policy, the basics of employment law, and how to document cases. What began as a tool for her own survival became WorkShield — a resource built to help others use knowledge, clarity, and evidence to protect themselves.
+
+Keisha is not a lawyer, and this site is not legal advice. It’s a worker-to-worker guide built on lived experience, research, and hard-earned lessons about how to make it through systems designed to wear people down.
+
+WorkShield exists so no one has to start from zero — or feel crazy for noticing what’s really happening. It’s here to help you name it, track it, and protect your peace while you fight for your rights.
 
 ---
 
@@ -36,10 +40,7 @@ Keir is not a lawyer. This site does not provide legal advice — it’s a worke
 
 ## 🪴 How to Use or Contribute
 
-If this project helps you or you’d like to contribute improvements, you can:
-- Open an issue or pull request  
-- Share the link with others dealing with workplace issues  
-- Fork and localize it for your region or industry  
+WorkShield was created for anyone who has ever left a meeting with your boss feeling like you don’t know what reality is. If it helps you see the signs, collect your evidence, or articulate your truth — use it however you need. That’s what it’s for.  
 
 ---
 
