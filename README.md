@@ -1,6 +1,6 @@
-# Work Survival Guide – Know Your Rights at Work
+# WorkShield – Know Your Rights at Work
 
-A plain-language educational site built with **HTML, CSS, and JavaScript** to help employees understand and protect their workplace rights.
+**WorkShield** is a plain-language, practical guide for employees facing retaliation, discrimination, or harassment — with clear steps for documenting issues and protecting yourself when HR isn’t your friend.
 
 This resource covers:
 - Recognizing retaliation, discrimination, and gaslighting tactics at work  
@@ -13,7 +13,7 @@ This resource covers:
 
 ## 🌐 Live Website
 
-👉 **[https://keiruff.github.io/focusboard/](https://keiruff.github.io/focusboard/)**
+👉 **Live site: [https://keiruff.github.io/workshield/](https://keiruff.github.io/workshield/)**
 
 ---
 
