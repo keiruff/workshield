@@ -2,189 +2,353 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | Blood Remembers</title>
-  <meta name="description" content="Blood Remembers is dedicated to preserving African ancestral legacies, advocating for reparations, and educating on the lasting impacts of slavery.">
-  <link rel="stylesheet" href="styles.css" />
+  <title>Work Survival Guide – Protect Your Rights at Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Practical, plain-language guide to protecting your rights at work: what to document, who to talk to, and where to go when HR isn’t on your side."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- Subheader with Date and Weather -->
-<div class="subheader">
-  <div class="subheader-left">Stay Informed. Be Empowered.</div>
-  <div class="subheader-right" id="date-weather">Loading...</div>
-</div>
-
-<script>
-  async function loadWeatherAndDate() {
-    const apiKey = '109b75b0d8d98125242a21b32a65f193';
-    const city = 'Fredericksburg, US';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
-
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      const temperature = Math.round(data.main.temp);
-      const conditions = data.weather[0].main;
-
-      const today = new Date();
-      const dateString = today.toLocaleDateString(undefined, {
-        weekday: 'short',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric'
-      });
-
-      document.getElementById('date-weather').textContent = `${dateString} | ${temperature}°F & ${conditions}`;
-    } catch (error) {
-      document.getElementById('date-weather').textContent = 'Unable to load weather';
-      console.error(error);
-    }
-  }
-
-  loadWeatherAndDate();
-</script>
-
-<header>
-  <h1>Blood Remembers</h1>
-  <p><strong>Honoring the lives, histories, and legacies of the stolen and silenced</strong></p>
-</header>
-
-<nav>
-  <div class="nav-container">
-    <div class="logo">
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">Work Survival Guide</span>
     </div>
-    <div class="hamburger" id="hamburger">
-      &#9776; <!-- This is the ☰ icon -->
-    </div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="timeline.html">Timeline</a></li>
-      <li><a href="ancestry.html">Ancestry</a></li>
-      <li><a href="reparations101.html">Reparations 101</a></li>
-      <li><a href="petition.html">Petition</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="legislationnews.html">Legislation News</a></li>
-      <li><a href="contact-me.html">Contact Me</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="newsletter.html">Achieves: Past Newsletters</a></li>
-    </ul>
-  </div>
-</nav>
+    <nav class="top-nav">
+      <a href="#start-here">Start here</a>
+      <a href="#red-flags">Red flags</a>
+      <a href="#document">Document</a>
+      <a href="#internal">Inside the company</a>
+      <a href="#external">Outside help</a>
+      <a href="#templates">Templates</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
 
-<main>
-  <section class="mission-box">
-    <h2>Why This Matters</h2>
-    <p>
-      This site exists to preserve the memory of African civilizations destroyed by the transatlantic slave trade.
-      Our ancestors created advanced societies with knowledge in astronomy, architecture, metallurgy, and governance.
-      From the empires of Mali, Kongo, Yoruba, and Benin to the walls of Great Zimbabwe and the libraries of Timbuktu,
-      their contributions have been systemically erased and rewritten. We reclaim these stories as acts of resistance and healing.
-    </p>
-  </section>
+  <main class="app-main single-column">
+    <!-- Hero / Start here -->
+    <section id="start-here" class="panel hero">
+      <div class="hero-content">
+        <h1>Know your rights. Protect your sanity.</h1>
+        <p class="hero-lead">
+          This site is a practical guide for workers who feel something is off:
+          retaliation, discrimination, harassment, “performance plans,” or quiet
+          push-out tactics.
+        </p>
+        <div class="hero-actions">
+          <a href="#document" class="btn primary">Jump to Documentation Plan</a>
+          <a href="#external" class="btn btn-outline">See External Resources</a>
+        </div>
+        <p class="hero-disclaimer">
+          This is general information, not legal advice. Laws vary by country and state.
+          When in doubt, speak with an attorney or official agency.
+        </p>
+      </div>
+    </section>
 
-  <section class="mission-box">
-    <h2>What You’ll Discover</h2>
-    <p>
-      Uncover detailed timelines of pre-colonial African kingdoms, spiritual practices, trade networks, and the brutal transitions into enslavement.
-      This journey exposes the truth hidden behind centuries of colonization — and honors the legacy of those who endured.
-    </p>
-  </section>
+    <!-- Red flags -->
+    <section id="red-flags" class="panel">
+      <h2>Common red flags at work</h2>
+      <p class="section-intro">
+        One weird day is annoying. A pattern is a problem. Pay attention when you see
+        multiple items on this list happening in a short window.
+      </p>
 
-  <section>
-    <h2 style="text-align: center;">We Remember</h2>
-    <p style="text-align: center; max-width: 750px; margin: 0 auto;">
-      This petition is a sacred tribute to the children, mothers, fathers, and elders stolen from thriving African kingdoms and forced into a life of suffering.
-    </p>
-    <h3 style="text-align: center; margin-top: 2rem;">Sign the Petition</h3>
-    <p style="text-align: center; max-width: 750px; margin: 0 auto;">
-      Your voice matters. Sign and share this petition to help us raise awareness and demand action.
-    </p>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a class="cta-button" href="https://www.change.org/reparations_now" target="_blank">
-        Sign the Petition on Change.org
-      </a>
-    </div>
-  </section>
+      <div class="cards-grid">
+        <article class="info-card">
+          <h3>Retaliation vibes</h3>
+          <ul>
+            <li>Things changed soon after you reported a concern or used leave.</li>
+            <li>Sudden write-ups or “performance issues” with no prior feedback.</li>
+            <li>Good duties taken away, junk work piled on.</li>
+          </ul>
+        </article>
 
-  <section>
-    <h2>Legacy of Great Kingdoms</h2>
-    <img class="kingdom-image" src="featured-image.jpg" alt="Tribute to African Kingdoms" style="width:100%; max-width: 300px; border-radius: 12px; display: block; margin: 2rem auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-  </section>
+        <article class="info-card">
+          <h3>Discrimination & harassment</h3>
+          <ul>
+            <li>Comments or jokes about race, gender, age, disability, religion, etc.</li>
+            <li>Different rules or standards for different groups.</li>
+            <li>Hostile behavior from coworkers that management ignores.</li>
+          </ul>
+        </article>
 
-  <section>
-    <h2>Sovereign Civilizations</h2>
-    <p style="text-align: center; max-width: 750px; margin: 0 auto;">
-      A legacy of greatness runs through our veins. Before the ships, before the chains—there were kings, queens, scholars, and empires of unmatched brilliance.
-    </p>
-    <ul style="list-style-type: disc; padding-left: 1.5rem; max-width: 800px; margin: 2rem auto;">
-      <li><strong>Nok Civilization (1000 BCE – 300 CE):</strong> Known for advanced iron-smelting and terracotta artistry in Nigeria.</li>
-      <li><strong>Kingdom of Kush (1070 BCE – 350 CE):</strong> Nubian rulers with pyramids and Pharaohs of their own.</li>
-      <li><strong>Carthage (814 BCE – 146 BCE):</strong> A North African maritime power that rivaled Rome.</li>
-      <li><strong>Aksum Empire (100 CE – 940 CE):</strong> Ethiopian empire of obelisks and early Christianity.</li>
-      <li><strong>Ghana Empire (300 CE – 1200 CE):</strong> West African gold trade powerhouse.</li>
-      <li><strong>Mali Empire (1235 – 1600 CE):</strong> Home to Mansa Musa and Timbuktu’s scholarly centers.</li>
-      <li><strong>Benin Kingdom (1100s – 1897 CE):</strong> Renowned for bronze casting and organized city systems.</li>
-      <li><strong>Kingdom of Kongo (1390 – 1914 CE):</strong> Politically advanced Central African empire.</li>
-      <li><strong>Zulu Kingdom (1816 – 1897 CE):</strong> Military and cultural giant founded by Shaka Zulu.</li>
-    </ul>
-  </section>
+        <article class="info-card">
+          <h3>Paper trail set-up</h3>
+          <ul>
+            <li>Vague expectations, but harsh criticism later.</li>
+            <li>Goals that move, deadlines that change without notice.</li>
+            <li>Conversations kept verbal, nothing put in writing.</li>
+          </ul>
+        </article>
 
-  <section>
-    <h2>Rupert’s Valley, St. Helena</h2>
-    <p style="max-width: 750px; margin: 0 auto; text-align: center;">
-      A forgotten graveyard of freedom seekers. Between 1840 and 1872, over 25,000 Africans were "liberated" from illegal slave ships by the British Royal Navy and brought to Rupert’s Valley. Many died in quarantine and were buried in unmarked graves.
-      In 2006, their remains were discovered during airport construction—alongside artifacts of trauma and resilience. Rupert’s Valley is now a sacred site of remembrance, evidence of lives stolen and struggles endured.
-    </p><br>
-    <p style="font-style: italic; color: #555; text-align: center;">We remember them not as victims—but as ancestors.</p>
-  </section>
+        <article class="info-card">
+          <h3>HR is “nice” but useless</h3>
+          <ul>
+            <li>They listen, but don’t document or follow up.</li>
+            <li>They coach <em>you</em> on being “less sensitive,” not the behavior.</li>
+            <li>You never see investigation notes or a real outcome.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-  <section>
-    <h2>Share This Page</h2>
-    <p style="text-align: center;">Spread the word and help us build a movement for justice and remembrance.</p>
-    <div style="text-align: center; margin-top: 1rem;">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://bloodremembers.org" target="_blank" style="margin: 0 10px;">
-        <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" />
-      </a>
-      <a href="https://x.com/bloodremembers" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/24/5968/5968958.png" alt="X (formerly Twitter)" />
-      </a>
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://bloodremembers.org" target="_blank" style="margin: 0 10px;">
-        <img src="https://cdn-icons-png.flaticon.com/24/733/733561.png" alt="LinkedIn" />
-      </a>
-      <a href="mailto:?subject=Support%20Reparations%20%7C%20BloodRemembers.org&body=Take%20a%20stand%20and%20sign%20the%20petition%20at%20https://bloodremembers.org" style="margin: 0 10px;">
-        <img src="https://cdn-icons-png.flaticon.com/24/732/732200.png" alt="Email" />
-      </a>
-    </div>
-  </section>
-</main>
+    <!-- Documentation -->
+    <section id="document" class="panel">
+      <h2>Your documentation plan</h2>
+      <p class="section-intro">
+        Documentation is your shield. Feelings are valid, but facts and timelines
+        are what agencies and lawyers use.
+      </p>
 
-<footer>
-  <p>&copy; 2025 Blood Remembers | All Rights Reserved</p>
-</footer>
+      <div class="two-column">
+        <div>
+          <h3>What to track</h3>
+          <ul>
+            <li>Date, time, location.</li>
+            <li>Who was involved and who witnessed it.</li>
+            <li>Exactly what was said or done (quotes if you can remember them).</li>
+            <li>How it affected your work, health, or opportunities.</li>
+            <li>What you did to respond or report it.</li>
+          </ul>
 
-  <script>
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-  const navItems = navLinks.querySelectorAll('a');
+          <h3>Where to keep it</h3>
+          <ul>
+            <li>Personal device or notebook you control, not a work computer.</li>
+            <li>Cloud notes app (Google Docs, Notes, Notion, etc.).</li>
+            <li>Backups: email entries to yourself from a personal email.</li>
+          </ul>
+        </div>
 
-  // Toggle nav on hamburger click
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
+        <div>
+          <h3>Example log entry</h3>
+          <div class="example-box">
+            <p><strong>Date:</strong> 2025-10-23, 2:15 PM</p>
+            <p><strong>People:</strong> Chris (supervisor), Teresa (coworker)</p>
+            <p>
+              <strong>Event:</strong> In team meeting, Chris said my “attitude”
+              about ticket assignments was the problem, then laughed when Teresa
+              joked about me being “too sensitive.”
+            </p>
+            <p>
+              <strong>Impact:</strong> Humiliating in front of team, pattern of
+              dismissing concerns about workload after I reported harassment.
+            </p>
+            <p><strong>Follow-up:</strong> Emailed summary to Chris & HR at 3:02 PM.</p>
+          </div>
 
-  // Close nav when a link is clicked
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      navLinks.classList.remove('active');
-    });
-  });
+          <button class="btn small btn-outline" data-copy-log>
+            Copy log template
+          </button>
+        </div>
+      </div>
+    </section>
 
-  // Close nav when resizing to desktop
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      navLinks.classList.remove('active');
-    }
-  });
-</script>
+    <!-- Internal pathways -->
+    <section id="internal" class="panel">
+      <h2>Inside the company: how to move smart</h2>
+      <p class="section-intro">
+        HR is not your therapist. HR protects the company. Use internal channels on
+        purpose, with receipts.
+      </p>
+
+      <ol class="numbered-list">
+        <li>
+          <strong>Decide the goal.</strong> Do you want the behavior to stop, a
+          transfer, documentation for the record, or all of the above? Knowing this
+          shapes what you say.
+        </li>
+        <li>
+          <strong>Follow written policy.</strong> Most handbooks spell out how to
+          report harassment, discrimination, or safety issues. Following that path
+          helps later if the company ignores it.
+        </li>
+        <li>
+          <strong>Use email, not just conversations.</strong> After meetings, send
+          recap emails: “Per our conversation today, my understanding is…”. This
+          locks in what was said.
+        </li>
+        <li>
+          <strong>Be factual, not emotional.</strong> You can be firm without
+          venting. Stick to dates, quotes, and impacts on your work.
+        </li>
+        <li>
+          <strong>Save everything.</strong> Screenshots, emails, Teams/Slack
+          messages, performance reviews, seating charts, policy PDFs.
+        </li>
+      </ol>
+
+      <div class="callout">
+        <strong>Important:</strong> If you feel unsafe or targeted after reporting,
+        that can be retaliation. Document every change that happens
+        <em>after</em> you speak up.
+      </div>
+    </section>
+
+    <!-- External help -->
+    <section id="external" class="panel">
+      <h2>Outside help: who you can talk to</h2>
+      <p class="section-intro">
+        When internal channels stall out or you’re clearly being played, it’s time
+        to widen the circle. Exact agencies and deadlines depend on your location,
+        but here are common options (especially in the U.S.).
+      </p>
+
+      <div class="cards-grid">
+        <article class="info-card">
+          <h3>Government agencies</h3>
+          <ul>
+            <li>Equal employment / human rights agencies (discrimination & retaliation).</li>
+            <li>Labor departments (wages, overtime, breaks, misclassification).</li>
+            <li>Occupational safety agencies (unsafe conditions, hazards).</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Employment lawyers</h3>
+          <ul>
+            <li>Many offer free consultations to review your situation.</li>
+            <li>Bring your timeline, docs, and company policies.</li>
+            <li>Ask about deadlines for filing claims in your state.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Unions & worker centers</h3>
+          <ul>
+            <li>If you’re unionized, talk to your union rep early.</li>
+            <li>Worker centers and legal aid clinics can help non-union workers.</li>
+            <li>They may know patterns at your employer already.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Mental health & support</h3>
+          <ul>
+            <li>Therapists can document work-related stress or anxiety.</li>
+            <li>Support groups and trusted friends keep you grounded.</li>
+            <li>You’re not “dramatic” for being affected by sustained stress.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Templates -->
+    <section id="templates" class="panel">
+      <h2>Copy-paste templates & scripts</h2>
+      <p class="section-intro">
+        Edit these to match your voice. Short, direct, and documented beats long,
+        emotional essays.
+      </p>
+
+      <div class="templates-grid">
+        <article class="template-card">
+          <h3>Email: documenting an incident</h3>
+          <pre class="template-text" data-template>
+Subject: Follow-up on [incident] – [date]
+
+Hi [Name],
+
+I’m following up to document what happened on [date] in [location].
+
+[Very short description: who, what was said/done, impact on your work.]
+
+This behavior concerns me because it may violate our policies on [harassment / discrimination / retaliation]. I’d like this documented and addressed.
+
+Thank you,
+[Your name]
+          </pre>
+          <button class="btn small btn-outline" data-copy-template>Copy</button>
+        </article>
+
+        <article class="template-card">
+          <h3>Email: recap after HR meeting</h3>
+          <pre class="template-text" data-template>
+Subject: Recap of our meeting on [date]
+
+Hi [HR / Manager Name],
+
+I’m writing to confirm my understanding of our meeting on [date].
+
+We discussed:  
+• [Your concern]  
+• [Any steps they said they would take]  
+
+You stated that [summary of what they promised or explained].
+
+If I’ve misunderstood anything, please let me know in writing.
+
+Best,
+[Your name]
+          </pre>
+          <button class="btn small btn-outline" data-copy-template>Copy</button>
+        </article>
+
+        <article class="template-card">
+          <h3>Script: if a meeting feels sketchy</h3>
+          <pre class="template-text" data-template>
+“I’m happy to continue this conversation, but I’d like to understand the purpose
+of this meeting and whether any concerns about my performance are being raised.
+If so, I’d like a copy in writing.”          
+          </pre>
+          <button class="btn small btn-outline" data-copy-template>Copy</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="panel">
+      <h2>Quick FAQ</h2>
+      <div class="faq-item">
+        <button class="faq-question" data-faq>
+          Is HR ever on my side?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Individual HR people can care about you as a human, but HR’s legal
+            duty is to the company. Treat HR as a channel, not your protector.
+            Use them, document them, don’t rely on them emotionally.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" data-faq>
+          Should I quit if it’s toxic?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Leaving might protect your health, but quitting can affect claims and
+            benefits. If possible, get legal advice first and gather your
+            documentation before you go.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" data-faq>
+          Can I record conversations?
+        </button>
+        <div class="faq-answer">
+          <p>
+            Recording laws are very different by state and country. Some require
+            just one person to know about the recording, others require everyone’s
+            consent. Check your local law before recording anyone.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>
+      This site is for general education only and does not create a lawyer-client
+      relationship. Screenshot and save anything that matters.
+    </small>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
