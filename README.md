@@ -21,7 +21,7 @@ This resource covers:
 
 This site was built by Keisha Ruffner, a public-sector worker who has personally been on the receiving end of retaliation, discrimination, and gaslighting — the slow, grinding mistreatment so many workers face in silence.
 
-When serial patterns of mistreatment went unaddressed and “HR support” became damage control, Keisha began teaching herself policy, the basics of employment law, and how to document cases. What began as a tool for her own survival became WorkShield — a resource built to help others use knowledge, clarity, and evidence to protect themselves.
+When serial patterns of mistreatment went unaddressed and “HR support” became damage control, Keisha began teaching herself policy, the basics of employment law, and how to document cases. What began as a tool for her own survival became Open Door Policy — a resource built to help others use knowledge, clarity, and evidence to protect themselves.
 
 Keisha is not a lawyer, and this site is not legal advice. It’s a worker-to-worker guide built on lived experience, research, and hard-earned lessons about how to make it through systems designed to wear people down.
 
@@ -40,7 +40,7 @@ WorkShield exists so no one has to start from zero — or feel crazy for noticin
 
 ## 🪴 How to Use or Contribute
 
-WorkShield was created for anyone who has ever left a meeting with your boss feeling like you don’t know what reality is. If it helps you see the signs, collect your evidence, or articulate your truth — use it however you need. That’s what it’s for.  
+Open Door Policy was created for anyone who has ever left a meeting with your boss feeling like you don’t know what reality is. If it helps you see the signs, collect your evidence, or articulate your truth — use it however you need. That’s what it’s for.  
 
 ---
 
